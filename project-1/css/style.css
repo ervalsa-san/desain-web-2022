@@ -108,8 +108,7 @@ header {
 }
 
 .header-buttons a:hover {
-    padding: 0.5rem 1rem 0.5rem 1rem !important;
-    background-color: var(--blue);
+    background-color: var(--light-blue);
     border-radius: 10px;
 }
 
@@ -381,15 +380,151 @@ header {
 }
 
 .for-you-buttons a {
+    margin-right: 1rem;
     color: var(--gray);
 }
 
 .link-active {
     color: var(--white) !important;
-    margin-right: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem !important;
     background-color: var(--blue);
     border-radius: 10px;
+}
+
+#trip-place {
+    margin-top: 100px;
+}
+
+.trip-place-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trip-place-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trip-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip-links a {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: var(--blue);
+}
+
+.trip-links a:hover {
+    color: var(--white) !important;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.trip-place-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trip-place-item {
+    margin-bottom: 5rem;
+}
+
+.trip-place-item h2 {
+    margin-bottom: 0.5rem;
+}
+
+.trip-status {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 1rem 0;
+    gap: 1rem;
+}
+
+.trip-place-image-1 {
+    width: 336px;
+    height: 280px;
+    display: block;
+    background: url("../assets/trip-image-1.png");
+}
+
+.trip-place-image-2 {
+    width: 336px;
+    height: 280px;
+    display: block;
+    background: url("../assets/trip-image-2.png");
+}
+
+.trip-place-image-3 {
+    width: 336px;
+    height: 280px;
+    display: block;
+    background: url("../assets/trip-image-3.png");
+}
+
+.trip-place-image-4 {
+    width: 336px;
+    height: 280px;
+    display: block;
+    background: url("../assets/trip-image-4.png");
+}
+
+.trip-place-image-5 {
+    width: 336px;
+    height: 280px;
+    display: block;
+    background: url("../assets/trip-image-5.png");
+}
+
+.trip-place-image-6 {
+    width: 336px;
+    height: 280px;
+    display: block;
+    background: url("../assets/trip-image-6.png");
+}
+
+.trip-rating-icon {
+    width: 120px;
+    height: 25px;
+    display: block;
+    background: url("../assets/rating.png");
+}
+
+.trip-name {
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgba(50, 88, 232, 0.15);
+}
+
+.trip-location {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.location-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("../assets/location-icon.png");
+}
+
+.trip-buttons {
+    margin-top: 2rem;
+}
+
+.trip-buttons a {
+    margin-right: 1rem;
+    color: var(--blue);
 }
 
 footer {
