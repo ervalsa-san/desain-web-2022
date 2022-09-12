@@ -1,6 +1,7 @@
 :root {
     --blue: #3258E8;
     --dark-blue:#232631;
+    --light-blue: #4086F5;
     --white: #FFFFFF;
     --black: #000000;
     --gray: #848484;
@@ -33,6 +34,7 @@ header {
     width: 100%;
     top: 0;
     position: fixed;
+    z-index: 1;
     align-content: center;
     -webkit-transition: all ease-out .5s;
     -moz-transition: all ease-out .5s;
@@ -101,7 +103,7 @@ header {
 
 .btn-active {
     padding: 0.5rem 1rem 0.5rem 1rem !important;
-    background-color: var(--blue);
+    background-color: var(--light-blue);
     border-radius: 10px;
 }
 
@@ -130,6 +132,264 @@ header {
 
 .hero-text h1 {
     font-size: 3rem;
+}
+
+#travel-search {
+    position: relative;
+    top: -125px;
+}
+
+.travel-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.travel-segmen {
+    display: flex;
+    flex-direction: row;
+}
+
+.travel-segmen p {
+    padding: 1rem;
+}
+
+.travel-flight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+    color: white;
+    background-color: var(--blue);
+    border-top-left-radius: 10px;
+}
+
+.icon-flight {
+    height: 24px;
+    width: 24px;
+    display: block;
+    background: url('../assets/plane-icon.png');
+}
+
+.travel-hotel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: var(--white);
+    border-top-right-radius: 10px;
+}
+
+.icon-hotel {
+    height: 24px;
+    width: 24px;
+    display: block;
+    background: url('../assets/bed-icon.png');
+}
+
+.travel-hotel:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.travel-status {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--white);
+    flex-direction: row;
+}
+
+.travel-status-title {
+    color: var(--soft-gray);
+}
+
+.travel-status-description {
+    font-weight: bold;
+}
+
+.icon-search {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--blue);
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-travel-search {
+    height: 38px;
+    width: 38px;
+    display: block;
+    background: url('../assets/search-icon.png');
+}
+
+.travel-take-off {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon-take-off {
+    height: 42px;
+    width: 42px;
+    display: block;
+    background: url('../assets/plane-icon-2.png');
+}
+
+.icon-arrow {
+    height: 24px;
+    width: 24px;
+    margin-left: 1.5rem;
+    display: block;
+    background: url('../assets/arrow-right.png');
+}
+
+.travel-landing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon-landing {
+    height: 42px;
+    width: 42px;
+    display: block;
+    background: url('../assets/plane-icon-3.png');
+}
+
+.travel-choose-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon-flight-date {
+    height: 42px;
+    width: 42px;
+    display: block;
+    background: url('../assets/plane-icon-4.png');
+}
+
+.travel-choose-flight-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon-flight-type {
+    height: 42px;
+    width: 42px;
+    display: block;
+    background: url('../assets/plane-icon-4.png');
+}
+
+.for-you-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.for-you-photos {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.photos-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.for-you-photo-1 {
+    width: 310px;
+    height: 240px;
+    border-radius: 10px;
+    background-image: url(../assets/image-2.png);
+}
+
+.for-you-photo-2 {
+    width: 310px;
+    height: 240px;
+    border-radius: 10px;
+    background-image: url(../assets/image-3.png);
+}
+
+.for-you-photo-3 {
+    width: 310px;
+    height: 495px;
+    border-radius: 10px;
+    background-image: url(../assets/image-4.png);
+}
+
+.for-you-text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.for-you-text-wrapper h1 {
+    font-size: 2rem;
+}
+
+.for-you-description {
+    color: var(--soft-gray);
+}
+
+.status-text-normal {
+    color: var(--soft-gray);
+}
+
+.text-active {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.status-text-bold {
+    font-weight: bold;
+}
+
+.for-you-status {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.for-you-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.for-you-buttons a {
+    color: var(--gray);
+}
+
+.link-active {
+    color: var(--white) !important;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
+    background-color: var(--blue);
+    border-radius: 10px;
 }
 
 footer {
