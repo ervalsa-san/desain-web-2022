@@ -6,6 +6,7 @@
     --black: #000000;
     --gray: #848484;
     --soft-gray: #BBBDC3;
+    --soft-gray-transparent: #bbbdc34f;
     --font-size: 1rem;
     --poppins: Poppins, sans-serif;
     --nunito: Nunito, sans-serif;
@@ -357,7 +358,7 @@ header {
 
 .text-active {
     font-weight: bold;
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 
 .status-text-bold {
@@ -431,11 +432,12 @@ header {
     margin-top: 5rem;
     text-align: left;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .trip-place-item {
-    margin-bottom: 5rem;
+    padding: 1rem;
 }
 
 .trip-place-item h2 {
@@ -502,7 +504,8 @@ header {
     border-radius: 10px;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: rgba(50, 88, 232, 0.15);
+    color: var(--blue);
+    background-color: rgba(50, 88, 232, 0.12);
 }
 
 .trip-location {
@@ -520,11 +523,76 @@ header {
 
 .trip-buttons {
     margin-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .trip-buttons a {
     margin-right: 1rem;
     color: var(--blue);
+}
+
+.trip-place-item:hover {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--soft-gray-transparent);
+}
+
+#customer-testimoni {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.testimoni-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+}
+
+.testimoni-text-wrapper p {
+    color: var(--soft-gray);
+}
+
+.image-testimoni {
+    width: 577px;
+    height: 600px;
+    display: block;
+    background: url("../assets/customer-image.png");
+}
+
+.testimoni-wrapper h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user-photo {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background: url("../assets/user-image.png");
+}
+
+.user-name {
+    color: var(--black) !important;
+    font-weight: bold;
+}
+
+.testimoni-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
