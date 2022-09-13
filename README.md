@@ -1,2 +1,2 @@
-# desain-web-2022
+# Desain Web 2022
 Repository mata kuliah Desain Web 2022
