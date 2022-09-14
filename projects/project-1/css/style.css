@@ -545,10 +545,10 @@ header {
 .testimoni-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     text-align: left;
     gap: 2rem;
 }
