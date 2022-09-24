@@ -6,7 +6,7 @@
     --magenta: #e310cb;
     --aqua: #86fbfb;
     --white: #f7f8fa;
-    --font-size: 1.3rem;
+    --font-size: 1rem;
     --mono: "Oxygen mono", monospace;
     --sans: Oxygen, sans-serif;
 }
@@ -192,6 +192,104 @@ nav ul li a:hover {
 .project-description {
     max-width: 300px;
     padding-bottom: 1rem;
+}
+
+#contact-me {
+    background-color: var(--plum);
+    text-align: center;
+}
+
+#contact-me h1 {
+    color: var(--white);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.contact-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact-me form {
+    text-align: start;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.contact-form label {
+    font-family: var(--sans);
+    color: var(--aqua);
+    font-size: var(--font-size);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contact-form input {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: var(--font-size);
+    font-family: var(--sans);
+}
+
+.contact-form select {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: var(--font-size);
+    font-family: var(--sans);
+}
+
+.form-input-name {
+    padding-bottom: 1.2rem;
+}
+
+.form-input-email {
+    padding-bottom: 1.2rem;
+}
+
+.form-input-know {
+    padding-bottom: 1.2rem;
+}
+
+.contact-form input.invalid {
+    border: 2px solid red;
+}
+
+.form-input-enquiry textarea {
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+    resize: none;
+    margin-top: 1rem;
+    font-size: var(--font-size);
+    font-family: var(--sans);
+    font-size: 1rem;
+}
+
+.form-input-enquiry textarea.invalid {
+    border: 2px solid red;
+}
+
+.form-input-enquiry {
+    padding-bottom: 1.2rem;
+}
+
+.form-button {
+    padding: 1rem;
+    width: 100%;
+    font-size: var(--sans);
+    border: none;
+    color: var(--white);
+    font-family: var(--sans);
+    font-weight: bold;
+    background-color: var(--magenta);
+    margin-bottom: 4rem;
+}
+
+.form-button:hover {
+    background-color: var(--hotmag);
+    cursor: pointer;
 }
 
 footer {

@@ -120,6 +120,46 @@
         </section>
 
         <div class="gradient"></div>
+
+        <section id="contact-me">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <h1>Contact Me</h1>
+                    <form action="" class="contact-form" onsubmit="return validateContactForm()">
+                        <div class="form-input-name">
+                            <label for="fname">Name</label><br>
+                            <input type="text" id="fname" name="fullname" placeholder="Your name...">
+                        </div>
+
+                        <div class="form-input-email">
+                            <label for="femail">Email</label><br>
+                            <input type="text" id="femail" name="email" placeholder="Your email...">
+                        </div>
+
+                        <div class="form-input-know">
+                            <label for="fknow">How do you know about me?</label><br>
+                            <select name="know" id="fknow">
+                                <option value="internet">Internet Search</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="github">Github</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="personal">Personal Preference</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-input-enquiry">
+                            <label for="fenquiry">Enquiry</label><br>
+                            <textarea type="text" id="fenquiry" name="enquiry" placeholder="Your message..."></textarea>
+                        </div>
+                        
+                        <button type="submit" id="button-submit" class="form-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="gradient"></div>
     </main>
 
     <footer>
