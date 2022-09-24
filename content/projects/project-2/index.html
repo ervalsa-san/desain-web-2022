@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <h1 id="heading-one">Selamat Datang di Kuliah Web Design</h1>
+    <input type="text" name="" id="nama" onkeypress="changeName()">
+    <p id="hasil-nama"></p>
+    <button onClick="changeName()">Ubah</button>
+    <button onClick="showAlert()">Show Alert</button> -->
+
+    <h2>Hitung</h2>
+    <p>Tinggi</p>
+    <input type="text" id="tinggi">
+    <p>Lebar</p>
+    <input type="text" id="lebar"><br><br>
+    <button onClick="hitung()">Hitung</button><br>
+    <p id="hasil-hitung" style="font-weight: bold;">Hasil</p>
+
+    <script>
+        let hasil_hitung = document.getElementById("hasil-hitung")
+        let input_tinggi = document.getElementById("tinggi")
+        let lebar_tinggi = document.getElementById("lebar")
+
+        function hitung() {
+            let hasil = parseFloat(input_tinggi.value) * parseFloat(lebar_tinggi.value);
+            
+            hasil_hitung.innerText = "Luas hasil perhitungan = " + hasil;
+        }
+
+        let h1 = document.getElementById("heading-one");
+        // console.log(h1.style.fontSize)
+
+        function changeH1() {
+            h1.style.color = "blue";
+            h1.style.fontsize = "46px";
+            h1.innerText = "Kok bisa banh, gimana caranya"
+        }
+
+        let nama = document.getElementById("nama")
+        let hasil_nama = document.getElementById("hasil-nama")
+
+        function changeName() {
+           hasil_nama.innerText = nama.value;
+        }
+
+        function showAlert() {
+            alert("Horror ketar ketir");
+        }
+    </script>
+</body>
+</html>
