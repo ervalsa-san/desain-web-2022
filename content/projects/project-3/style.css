@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+    background-color: #192b4d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 160px;
+    height: 20px;
+    display: block;
+    background-image: url("./tailwind.png");
+    background-size: contain;
+}
+
+a, li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+ul li a {
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.links li a:hover {
+    color: aqua;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.setting p {
+    color: blueviolet;
+}
+
+.setting p:hover {
+    color: white;
+    cursor: pointer;
+}
