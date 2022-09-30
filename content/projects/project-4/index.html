@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JQuery</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+</head>
+<body>
+    <style>
+        /* li {
+            list-style-type: none;
+        } */
+    </style>
+
+    <!-- <p class="newClass">Sample class selector.</p>
+    <p id="newId">Sample id selector</p>
+    <p>sample element name selector</p>
+    <button>Click me</button><br><br>
+
+    <input type="text" id="nama">
+    <ul id="dataList">
+    </ul> -->
+
+    <div id="clickme" onclick="startAjax()">
+        Click Me
+    </div>
+
+    <script>
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("p").hide();
+        //         // $("#newId").hide();
+        //         // $(".newClass").show();
+        //     })
+        // })
+
+        // $("#nama").keypress(function () {
+        //     let panjangNama = $("#nama").val();
+        //     $("#dataList").append("<li>" + panjangNama + "</li>")
+        // })
+
+        function startAjax() {
+            $("#clickme").text("Calling server");
+            $.ajax(
+                {
+                    url: 'name.json',
+                    success: callbackFunction,
+                    error: errorFunction,
+                    contentType: 'application/json',
+                    headers: {
+                        'Access-Control-Allow-Origin' : '*'
+                    },
+                    dataType : 'json'
+                }
+            );
+        }
+
+        function callbackFunction(data) {
+            $("#clickme").text("result: " + data);
+        }
+
+        function errorFunction(info) {
+            $("#clickme").text("Error occured: " + info)
+        }
+    </script>
+</body>
+</html>
