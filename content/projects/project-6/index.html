@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src="./app.js"></script> -->
+    <script>
+        const url = "https://api.agify.io/?name=meelad";
+        const getData = async () => {
+            try {
+                let response = await fetch(url)
+                let result = await response.json()
+                console.log(result)
+                let responseAge = result.age;
+                let responseName = result.name;
+                let responseCount = result.count;
+                let age = document.getElementById('age');
+                let count = document.getElementById('count');
+                let name = document.getElementById('name');
+                age.innerHTML = "Age : " + responseAge;
+                count.innerHTML = "Count : " + responseCount;
+                name.innerHTML = "Name : " + responseName;
+            } catch(error) {
+                console.log(error)
+            }
+
+            // Jangan diketik yg ini
+            // try {
+            //     let response = await fetch(url);
+            //     let { results } = await response.json();
+            //     console.log(results);
+            //     let responseGender = results[0].gender;
+            //     let gender = document.getElementById('gender');
+            //     gender.innerHTML = "Jenis Kelamin : " + responseGender;
+            // } catch (error) {
+            //     console.log(error)
+            // }
+        };
+
+        getData();
+    </script>
+</head>
+<body>
+    <p id="name">Name : </p>
+    <p id="count">count : </p>
+    <p id="age">Age : </p>
+</body>
+</html>
